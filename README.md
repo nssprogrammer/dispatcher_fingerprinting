@@ -92,7 +92,7 @@ Detector versions (v0.3 to v0.9) are named as in the paper; `lib/frozen/README.m
   author = {Snigdha Chandan Khilar},
   title  = {Fingerprinting the Dispatchers behind Distributed Model Extraction},
   year   = {2026},
-  note   = {Code: https://github.com/nssprogrammer/dispatcher-fingerprinting}
+  note   = {Code: https://github.com/nssprogrammer/dispatcher_fingerprinting}
 }
 ```
 

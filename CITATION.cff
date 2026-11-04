@@ -6,7 +6,7 @@ authors:
     given-names: Snigdha Chandan
     email: snkhilar@gmail.com
 license: MIT
-repository-code: "https://github.com/nssprogrammer/dispatcher-fingerprinting"
+repository-code: "https://github.com/nssprogrammer/dispatcher_fingerprinting"
 preferred-citation:
   type: article
   title: "Fingerprinting the Dispatchers behind Distributed Model Extraction"
