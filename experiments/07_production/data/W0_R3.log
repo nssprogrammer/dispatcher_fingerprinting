@@ -1,0 +1,4 @@
+[     1s] real {'active': 3014, 'light': 2107, 'heavy': 891, 'platform': 16, 'requests': 881167, 'dur_median': 7.46, 'dur_p90': 32.34}
+[     2s] R3 {'light': {'testable': False, 'instances_ge40': 0}, 'heavy': {'testable': False, 'instances_ge40': 0}}
+[     3s] inject {'I_rrshared': {'ok': 2094, 'refused': 0, 'keys_used': 40}, 'I_shuffle': {'ok': 2138, 'refused': 0, 'keys_used': 40}, 'I_rrworker': {'ok': 2164, 'refused': 0, 'keys_used': 40}, 'I_rot429_shared': {'ok': 2100, 'refused': 139, 'keys_used': 40}, 'I_rot429_worker': {'ok': 2186, 'refused': 4, 'keys_used': 9}, 'I_hashed': {'ok': 2323, 'refused': 0, 'keys_used': 40}, 'I_sticky_ttl': {'ok': 2149, 'refused': 1, 'keys_used': 40}, 'I_hedged': {'ok': 3805, 'refused': 0, 'keys_used': 40}, 'I_pinned': {'ok': 2133, 'refused': 0, 'keys_used': 8}, 'I_open_steady': {'ok': 7852, 'refused': 0, 'keys_used': 40}, 'I_company': {'ok': 1080, 'refused': 0, 'keys_used': 10}}
+[     4s] done {'R3': {'light': {}, 'heavy': {}}}

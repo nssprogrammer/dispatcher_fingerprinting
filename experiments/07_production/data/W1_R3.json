@@ -1,0 +1,84 @@
+{
+ "window": "data/W1.parquet",
+ "W": 3600.0,
+ "floor": 10,
+ "seed": 10,
+ "real": {
+  "active": 1611,
+  "light": 1175,
+  "heavy": 429,
+  "platform": 7,
+  "requests": 669020,
+  "dur_median": 7.94,
+  "dur_p90": 29.38
+ },
+ "R3": {
+  "light": {
+   "testable": false,
+   "instances_ge40": 0
+  },
+  "heavy": {
+   "testable": false,
+   "instances_ge40": 0
+  }
+ },
+ "inject": {
+  "I_rrshared": {
+   "ok": 2212,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_shuffle": {
+   "ok": 2181,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rrworker": {
+   "ok": 2219,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rot429_shared": {
+   "ok": 2416,
+   "refused": 161,
+   "keys_used": 40
+  },
+  "I_rot429_worker": {
+   "ok": 2410,
+   "refused": 9,
+   "keys_used": 9
+  },
+  "I_hashed": {
+   "ok": 2296,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_sticky_ttl": {
+   "ok": 2340,
+   "refused": 4,
+   "keys_used": 40
+  },
+  "I_hedged": {
+   "ok": 3884,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_pinned": {
+   "ok": 2327,
+   "refused": 0,
+   "keys_used": 8
+  },
+  "I_open_steady": {
+   "ok": 7864,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_company": {
+   "ok": 1241,
+   "refused": 0,
+   "keys_used": 10
+  }
+ },
+ "site_N_real": 1611,
+ "runtime_min": 0.1
+}

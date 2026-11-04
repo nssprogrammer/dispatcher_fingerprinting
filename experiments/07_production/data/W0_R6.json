@@ -1,0 +1,140 @@
+{
+ "window": "data/W0.parquet",
+ "W": 3600.0,
+ "floor": 10,
+ "seed": 10,
+ "real": {
+  "active": 3014,
+  "light": 2107,
+  "heavy": 891,
+  "platform": 16,
+  "requests": 881167,
+  "dur_median": 7.46,
+  "dur_p90": 32.34
+ },
+ "inject": {
+  "I_rrshared": {
+   "ok": 2094,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_shuffle": {
+   "ok": 2138,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rrworker": {
+   "ok": 2164,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rot429_shared": {
+   "ok": 2100,
+   "refused": 139,
+   "keys_used": 40
+  },
+  "I_rot429_worker": {
+   "ok": 2186,
+   "refused": 4,
+   "keys_used": 9
+  },
+  "I_hashed": {
+   "ok": 2323,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_sticky_ttl": {
+   "ok": 2149,
+   "refused": 1,
+   "keys_used": 40
+  },
+  "I_hedged": {
+   "ok": 3805,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_pinned": {
+   "ok": 2133,
+   "refused": 0,
+   "keys_used": 8
+  },
+  "I_open_steady": {
+   "ok": 7852,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_company": {
+   "ok": 1080,
+   "refused": 0,
+   "keys_used": 10
+  }
+ },
+ "site_N_real": 3014,
+ "R6": {
+  "cells": [
+   {
+    "ring": "ring_J0",
+    "N": 500,
+    "theta1": 2.73,
+    "duty": 0.2,
+    "tau_c": 5.29,
+    "T_star_s": 1281.0,
+    "T_det_s": 3600.0,
+    "within_factor2": false
+   },
+   {
+    "ring": "ring_J0",
+    "N": 2000,
+    "theta1": 2.52,
+    "duty": 0.2,
+    "tau_c": 5.37,
+    "T_star_s": 6116.0,
+    "T_det_s": null,
+    "within_factor2": true
+   },
+   {
+    "ring": "ring_J0",
+    "N": 3014,
+    "theta1": 2.62,
+    "duty": 0.2,
+    "tau_c": 5.35,
+    "T_star_s": 8504.0,
+    "T_det_s": null,
+    "within_factor2": true
+   },
+   {
+    "ring": "ring_J6",
+    "N": 500,
+    "theta1": 2.65,
+    "duty": 0.165,
+    "tau_c": 5.39,
+    "T_star_s": 1380.0,
+    "T_det_s": null,
+    "within_factor2": false
+   },
+   {
+    "ring": "ring_J6",
+    "N": 2000,
+    "theta1": 2.51,
+    "duty": 0.165,
+    "tau_c": 5.34,
+    "T_star_s": 6119.0,
+    "T_det_s": null,
+    "within_factor2": true
+   },
+   {
+    "ring": "ring_J6",
+    "N": 3014,
+    "theta1": 2.58,
+    "duty": 0.165,
+    "tau_c": 5.35,
+    "T_star_s": 8717.0,
+    "T_det_s": null,
+    "within_factor2": true
+   }
+  ],
+  "frac_within": 0.67,
+  "pass_": false
+ },
+ "runtime_min": 19.8
+}

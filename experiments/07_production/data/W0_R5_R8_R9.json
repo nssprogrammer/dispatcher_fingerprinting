@@ -1,0 +1,249 @@
+{
+ "window": "data/W0.parquet",
+ "W": 3600.0,
+ "floor": 10,
+ "seed": 10,
+ "real": {
+  "active": 3014,
+  "light": 2107,
+  "heavy": 891,
+  "platform": 16,
+  "requests": 881167,
+  "dur_median": 7.46,
+  "dur_p90": 32.34
+ },
+ "inject": {
+  "I_rrshared": {
+   "ok": 2094,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_shuffle": {
+   "ok": 2138,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rrworker": {
+   "ok": 2164,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rot429_shared": {
+   "ok": 2100,
+   "refused": 139,
+   "keys_used": 40
+  },
+  "I_rot429_worker": {
+   "ok": 2186,
+   "refused": 4,
+   "keys_used": 9
+  },
+  "I_hashed": {
+   "ok": 2323,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_sticky_ttl": {
+   "ok": 2149,
+   "refused": 1,
+   "keys_used": 40
+  },
+  "I_hedged": {
+   "ok": 3805,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_pinned": {
+   "ok": 2133,
+   "refused": 0,
+   "keys_used": 8
+  },
+  "I_open_steady": {
+   "ok": 7852,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_company": {
+   "ok": 1080,
+   "refused": 0,
+   "keys_used": 10
+  }
+ },
+ "site_N_real": 3014,
+ "R5": {
+  "N_real": 3014,
+  "trimmed": 0,
+  "recall": 0.0,
+  "purity": 0.0,
+  "groups": [
+   {
+    "real_heavy": 46
+   }
+  ],
+  "pass_": false
+ },
+ "R9": {
+  "groups": [
+   {
+    "size": 46,
+    "members": [
+     "r108",
+     "r114",
+     "r135",
+     "r161",
+     "r169",
+     "r173",
+     "r177",
+     "r183",
+     "r187",
+     "r188",
+     "r192",
+     "r231",
+     "r234",
+     "r249",
+     "r252",
+     "r307",
+     "r32",
+     "r322",
+     "r366",
+     "r398",
+     "r40",
+     "r400",
+     "r403",
+     "r418",
+     "r425",
+     "r440",
+     "r444",
+     "r445",
+     "r449",
+     "r470",
+     "r473",
+     "r482",
+     "r484",
+     "r513",
+     "r518",
+     "r526",
+     "r535",
+     "r546",
+     "r553",
+     "r559",
+     "r583",
+     "r585",
+     "r87",
+     "r89",
+     "r9",
+     "r90"
+    ],
+    "cls": "shared round-robin (open-loop relay)",
+    "ring_z": 53.5,
+    "conc_z": -0.6,
+    "R": 12.184,
+    "z_R": -86.4,
+    "req_per_acct": [
+     183.0,
+     188.0,
+     191.0
+    ],
+    "chi2": 0.89,
+    "p_uniform_low": 1.4392601993614012e-30,
+    "rotation": true,
+    "corroborated": true
+   }
+  ],
+  "pass_": true
+ },
+ "R8": {
+  "spectral_real_groups": [
+   {
+    "real_heavy": 46
+   }
+  ],
+  "graph_real_groups": [
+   {
+    "real_light": 2,
+    "real_heavy": 1
+   },
+   {
+    "real_heavy": 2,
+    "real_light": 2
+   }
+  ],
+  "graph_groups": [
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 5
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 3
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 3
+   },
+   {
+    "I_rot429_shared": 1,
+    "real_platform": 1
+   },
+   {
+    "real_light": 2,
+    "real_heavy": 1
+   },
+   {
+    "real_heavy": 2,
+    "real_light": 2
+   },
+   {
+    "real_light": 13,
+    "real_heavy": 3,
+    "I_hashed": 1,
+    "real_platform": 1
+   },
+   {
+    "real_light": 7,
+    "real_heavy": 2,
+    "I_open_steady": 1,
+    "real_platform": 1
+   },
+   {
+    "I_rrworker": 40,
+    "real_heavy": 37,
+    "real_light": 33,
+    "I_company": 10,
+    "I_hedged": 4,
+    "I_rrshared": 2,
+    "I_shuffle": 2,
+    "I_sticky_ttl": 2
+   }
+  ],
+  "graph_injected_recovery": {
+   "I_rrshared": 0.12,
+   "I_shuffle": 0.05,
+   "I_rrworker": 1.0,
+   "I_rot429_shared": 0.02,
+   "I_rot429_worker": 0.0,
+   "I_hashed": 0.02,
+   "I_sticky_ttl": 0.05,
+   "I_hedged": 0.1,
+   "I_pinned": 0.0,
+   "I_open_steady": 0.02,
+   "I_company": 1.0
+  }
+ },
+ "runtime_min": 4.8
+}

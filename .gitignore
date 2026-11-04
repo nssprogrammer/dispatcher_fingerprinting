@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+figures/out/
+experiments/*/analysis/*.npy
+experiments/04_repeat/analysis/seed_pr.json
+experiments/04_repeat/analysis/window_seed.out
+experiments/07_production/data/W?.parquet
+experiments/07_production/chutes_W?.parquet
+experiments/*/rehearse.py
+r/

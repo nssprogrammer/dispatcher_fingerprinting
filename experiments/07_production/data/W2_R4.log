@@ -1,0 +1,14 @@
+[     0s] real {'active': 3069, 'light': 2187, 'heavy': 867, 'platform': 15, 'requests': 643220, 'dur_median': 7.38, 'dur_p90': 35.6}
+[     2s] inject {'I_rrshared': {'ok': 2147, 'refused': 0, 'keys_used': 40}, 'I_shuffle': {'ok': 2035, 'refused': 0, 'keys_used': 40}, 'I_rrworker': {'ok': 1975, 'refused': 0, 'keys_used': 40}, 'I_rot429_shared': {'ok': 1885, 'refused': 123, 'keys_used': 40}, 'I_rot429_worker': {'ok': 2024, 'refused': 1, 'keys_used': 8}, 'I_hashed': {'ok': 2047, 'refused': 0, 'keys_used': 40}, 'I_sticky_ttl': {'ok': 2042, 'refused': 4, 'keys_used': 40}, 'I_hedged': {'ok': 3656, 'refused': 0, 'keys_used': 40}, 'I_pinned': {'ok': 2035, 'refused': 0, 'keys_used': 8}, 'I_open_steady': {'ok': 7880, 'refused': 0, 'keys_used': 40}, 'I_company': {'ok': 1043, 'refused': 0, 'keys_used': 10}}
+[    19s] R4 I_rrshared shared round-robin (closed loop) OK R=0.019 zR=5.5 ring=43.7 conc=-0.3 K=8.3
+[    25s] R4 I_shuffle random / shuffle OK R=0.016 zR=5.5 ring=0.0 conc=-9.9 K=9.1
+[    32s] R4 I_rrworker per-worker round-robin OK R=0.015 zR=5.5 ring=0.4 conc=58.7 K=9.0
+[    38s] R4 I_rot429_shared per-worker round-robin OK R=0.004 zR=5.5 ring=-0.8 conc=16.5 K=8.8
+[    40s] R4 I_rot429_worker sticky / episodic OK R=0.201 zR=4.6 ring=0.1 conc=-1.1 K=8.7
+[    46s] R4 I_hashed random / shuffle OK R=0.016 zR=5.5 ring=0.7 conc=-11.1 K=8.7
+[    52s] R4 I_sticky_ttl random / shuffle WRONG R=0.016 zR=5.5 ring=4.6 conc=-3.1 K=8.8
+[    59s] R4 I_hedged random / shuffle OK R=0.036 zR=5.4 ring=0.6 conc=-13.1 K=6.8
+[    61s] R4 I_pinned none OK R=0.991 zR=0.6 ring=-0.4 conc=1.5 K=9.0
+[    68s] R4 I_open_steady none OK R=0.86 zR=1.3 ring=-0.1 conc=1.3 K=36.7
+[    70s] R4 I_company random / shuffle OK R=0.017 zR=5.5 ring=-1.1 conc=-3.8 K=4.3
+[    70s] done {'R4': True}

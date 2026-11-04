@@ -1,0 +1,169 @@
+{
+ "window": "data/W0.parquet",
+ "W": 3600.0,
+ "floor": 10,
+ "seed": 10,
+ "real": {
+  "active": 3014,
+  "light": 2107,
+  "heavy": 891,
+  "platform": 16,
+  "requests": 881167,
+  "dur_median": 7.46,
+  "dur_p90": 32.34
+ },
+ "inject": {
+  "I_rrshared": {
+   "ok": 2094,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_shuffle": {
+   "ok": 2138,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rrworker": {
+   "ok": 2164,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rot429_shared": {
+   "ok": 2100,
+   "refused": 139,
+   "keys_used": 40
+  },
+  "I_rot429_worker": {
+   "ok": 2186,
+   "refused": 4,
+   "keys_used": 9
+  },
+  "I_hashed": {
+   "ok": 2323,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_sticky_ttl": {
+   "ok": 2149,
+   "refused": 1,
+   "keys_used": 40
+  },
+  "I_hedged": {
+   "ok": 3805,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_pinned": {
+   "ok": 2133,
+   "refused": 0,
+   "keys_used": 8
+  },
+  "I_open_steady": {
+   "ok": 7852,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_company": {
+   "ok": 1080,
+   "refused": 0,
+   "keys_used": 10
+  }
+ },
+ "site_N_real": 3014,
+ "R7": {
+  "expansion": {
+   "I_shuffle": {
+    "10min": {
+     "auc": 0.827,
+     "prec_at_pool": 0.254,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.946,
+     "prec_at_pool": 0.529,
+     "score": "handoff"
+    }
+   },
+   "I_company": {
+    "10min": {
+     "auc": 0.976,
+     "prec_at_pool": 0.542,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.995,
+     "prec_at_pool": 0.733,
+     "score": "handoff"
+    }
+   },
+   "I_hashed": {
+    "10min": {
+     "auc": 0.851,
+     "prec_at_pool": 0.308,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.964,
+     "prec_at_pool": 0.554,
+     "score": "handoff"
+    }
+   },
+   "I_hedged": {
+    "10min": {
+     "auc": 0.896,
+     "prec_at_pool": 0.302,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.97,
+     "prec_at_pool": 0.521,
+     "score": "handoff"
+    }
+   },
+   "I_rrworker": {
+    "10min": {
+     "auc": 0.661,
+     "prec_at_pool": 0.198,
+     "score": "turn"
+    },
+    "20min": {
+     "auc": 0.691,
+     "prec_at_pool": 0.271,
+     "score": "turn"
+    }
+   },
+   "I_sticky_ttl": {
+    "10min": {
+     "auc": 0.631,
+     "prec_at_pool": 0.088,
+     "score": "turn"
+    },
+    "20min": {
+     "auc": 0.656,
+     "prec_at_pool": 0.11,
+     "score": "turn"
+    }
+   },
+   "I_rot429_shared": {
+    "10min": {
+     "auc": 0.567,
+     "prec_at_pool": 0.07,
+     "score": "turn"
+    },
+    "20min": {
+     "auc": 0.669,
+     "prec_at_pool": 0.152,
+     "score": "turn"
+    }
+   }
+  },
+  "auc_20min": {
+   "I_shuffle": 0.946,
+   "I_company": 0.995,
+   "I_hashed": 0.964,
+   "I_hedged": 0.97
+  },
+  "pass_": true
+ },
+ "runtime_min": 1.3
+}

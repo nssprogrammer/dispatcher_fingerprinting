@@ -1,0 +1,9 @@
+[     1s] real {'active': 3069, 'light': 2187, 'heavy': 867, 'platform': 15, 'requests': 643220, 'dur_median': 7.38, 'dur_p90': 35.6}
+[     2s] inject {'I_rrshared': {'ok': 2147, 'refused': 0, 'keys_used': 40}, 'I_shuffle': {'ok': 2035, 'refused': 0, 'keys_used': 40}, 'I_rrworker': {'ok': 1975, 'refused': 0, 'keys_used': 40}, 'I_rot429_shared': {'ok': 1885, 'refused': 123, 'keys_used': 40}, 'I_rot429_worker': {'ok': 2024, 'refused': 1, 'keys_used': 8}, 'I_hashed': {'ok': 2047, 'refused': 0, 'keys_used': 40}, 'I_sticky_ttl': {'ok': 2042, 'refused': 4, 'keys_used': 40}, 'I_hedged': {'ok': 3656, 'refused': 0, 'keys_used': 40}, 'I_pinned': {'ok': 2035, 'refused': 0, 'keys_used': 8}, 'I_open_steady': {'ok': 7880, 'refused': 0, 'keys_used': 40}, 'I_company': {'ok': 1043, 'refused': 0, 'keys_used': 10}}
+[    38s] R6 {'ring': 'ring_J0', 'N': 500, 'theta1': 2.55, 'duty': 0.199, 'tau_c': 5.18, 'T_star_s': 1442.0, 'T_det_s': None, 'within_factor2': False}
+[   256s] R6 {'ring': 'ring_J0', 'N': 2000, 'theta1': 2.71, 'duty': 0.199, 'tau_c': 5.34, 'T_star_s': 5237.0, 'T_det_s': None, 'within_factor2': True}
+[   669s] R6 {'ring': 'ring_J0', 'N': 3069, 'theta1': 2.62, 'duty': 0.199, 'tau_c': 5.32, 'T_star_s': 8572.0, 'T_det_s': None, 'within_factor2': True}
+[   703s] R6 {'ring': 'ring_J6', 'N': 500, 'theta1': 2.72, 'duty': 0.166, 'tau_c': 5.28, 'T_star_s': 1288.0, 'T_det_s': None, 'within_factor2': False}
+[   918s] R6 {'ring': 'ring_J6', 'N': 2000, 'theta1': 2.86, 'duty': 0.166, 'tau_c': 5.33, 'T_star_s': 4708.0, 'T_det_s': None, 'within_factor2': True}
+[  1337s] R6 {'ring': 'ring_J6', 'N': 3069, 'theta1': 2.65, 'duty': 0.166, 'tau_c': 5.32, 'T_star_s': 8363.0, 'T_det_s': None, 'within_factor2': True}
+[  1337s] done {'R6': False}

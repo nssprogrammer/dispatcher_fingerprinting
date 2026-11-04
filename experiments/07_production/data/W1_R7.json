@@ -1,0 +1,169 @@
+{
+ "window": "data/W1.parquet",
+ "W": 3600.0,
+ "floor": 10,
+ "seed": 10,
+ "real": {
+  "active": 1611,
+  "light": 1175,
+  "heavy": 429,
+  "platform": 7,
+  "requests": 669020,
+  "dur_median": 7.94,
+  "dur_p90": 29.38
+ },
+ "inject": {
+  "I_rrshared": {
+   "ok": 2212,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_shuffle": {
+   "ok": 2181,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rrworker": {
+   "ok": 2219,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rot429_shared": {
+   "ok": 2416,
+   "refused": 161,
+   "keys_used": 40
+  },
+  "I_rot429_worker": {
+   "ok": 2410,
+   "refused": 9,
+   "keys_used": 9
+  },
+  "I_hashed": {
+   "ok": 2296,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_sticky_ttl": {
+   "ok": 2340,
+   "refused": 4,
+   "keys_used": 40
+  },
+  "I_hedged": {
+   "ok": 3884,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_pinned": {
+   "ok": 2327,
+   "refused": 0,
+   "keys_used": 8
+  },
+  "I_open_steady": {
+   "ok": 7864,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_company": {
+   "ok": 1241,
+   "refused": 0,
+   "keys_used": 10
+  }
+ },
+ "site_N_real": 1611,
+ "R7": {
+  "expansion": {
+   "I_shuffle": {
+    "10min": {
+     "auc": 0.908,
+     "prec_at_pool": 0.435,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.953,
+     "prec_at_pool": 0.573,
+     "score": "handoff"
+    }
+   },
+   "I_company": {
+    "10min": {
+     "auc": 0.965,
+     "prec_at_pool": 0.617,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.999,
+     "prec_at_pool": 0.867,
+     "score": "handoff"
+    }
+   },
+   "I_hashed": {
+    "10min": {
+     "auc": 0.907,
+     "prec_at_pool": 0.45,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.956,
+     "prec_at_pool": 0.579,
+     "score": "handoff"
+    }
+   },
+   "I_hedged": {
+    "10min": {
+     "auc": 0.896,
+     "prec_at_pool": 0.417,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.973,
+     "prec_at_pool": 0.613,
+     "score": "handoff"
+    }
+   },
+   "I_rrworker": {
+    "10min": {
+     "auc": 0.634,
+     "prec_at_pool": 0.225,
+     "score": "handoff"
+    },
+    "20min": {
+     "auc": 0.667,
+     "prec_at_pool": 0.215,
+     "score": "turn"
+    }
+   },
+   "I_sticky_ttl": {
+    "10min": {
+     "auc": 0.61,
+     "prec_at_pool": 0.1,
+     "score": "turn"
+    },
+    "20min": {
+     "auc": 0.65,
+     "prec_at_pool": 0.118,
+     "score": "turn"
+    }
+   },
+   "I_rot429_shared": {
+    "10min": {
+     "auc": 0.606,
+     "prec_at_pool": 0.121,
+     "score": "turn"
+    },
+    "20min": {
+     "auc": 0.701,
+     "prec_at_pool": 0.208,
+     "score": "turn"
+    }
+   }
+  },
+  "auc_20min": {
+   "I_shuffle": 0.953,
+   "I_company": 0.999,
+   "I_hashed": 0.956,
+   "I_hedged": 0.973
+  },
+  "pass_": true
+ },
+ "runtime_min": 0.8
+}

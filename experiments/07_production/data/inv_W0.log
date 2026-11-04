@@ -1,0 +1,13 @@
+most enriched: []
+heavy-only spectral groups: {np.int64(0): 46} trimmed 0
+ group 0: n=46 counts p10/50/90=[190. 190. 191.] chi2=0.1 df=45 lower-p=7.87e-52 chutes {11: 0.96, 31: 0.04} fire-overlap 0
+   classifier: shared round-robin (open-loop relay) ring_z 47.5 conc -0.6 R 12.184
+ chute 0: 50 heavy accts, counts median 38, var/mean 11.40
+ chute 7: 565 heavy accts, counts median 46, var/mean 86.31
+ chute 10: 31 heavy accts, counts median 50, var/mean 616.73
+ chute 11: 51 heavy accts, counts median 190, var/mean 10.80
+ chute 12: 42 heavy accts, counts median 144, var/mean 22.37
+ chute 19: 61 heavy accts, counts median 45, var/mean 12.96
+ group 0: pools with 0-0 members: 0, ring z>6: 0
+ group 0: pools with 0-3 members: 0, ring z>6: 0
+ group 0: pools with 4-99 members: 0, ring z>6: 0

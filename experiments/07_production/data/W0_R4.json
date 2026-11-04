@@ -1,0 +1,257 @@
+{
+ "window": "data/W0.parquet",
+ "W": 3600.0,
+ "floor": 10,
+ "seed": 10,
+ "real": {
+  "active": 3014,
+  "light": 2107,
+  "heavy": 891,
+  "platform": 16,
+  "requests": 881167,
+  "dur_median": 7.46,
+  "dur_p90": 32.34
+ },
+ "inject": {
+  "I_rrshared": {
+   "ok": 2094,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_shuffle": {
+   "ok": 2138,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rrworker": {
+   "ok": 2164,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rot429_shared": {
+   "ok": 2100,
+   "refused": 139,
+   "keys_used": 40
+  },
+  "I_rot429_worker": {
+   "ok": 2186,
+   "refused": 4,
+   "keys_used": 9
+  },
+  "I_hashed": {
+   "ok": 2323,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_sticky_ttl": {
+   "ok": 2149,
+   "refused": 1,
+   "keys_used": 40
+  },
+  "I_hedged": {
+   "ok": 3805,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_pinned": {
+   "ok": 2133,
+   "refused": 0,
+   "keys_used": 8
+  },
+  "I_open_steady": {
+   "ok": 7852,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_company": {
+   "ok": 1080,
+   "refused": 0,
+   "keys_used": 10
+  }
+ },
+ "R4": {
+  "null_stratum": "heavy",
+  "pools": {
+   "I_rrshared": {
+    "cls": "shared round-robin (closed loop)",
+    "R": 0.019,
+    "z_R": 10.0,
+    "z_R20": 15.0,
+    "ring_z": 45.6,
+    "conc_z": -0.0,
+    "coll": 0.14,
+    "z_start": 0.9,
+    "K_little": 8.4,
+    "K_fano": 8.0,
+    "n_req": 1922,
+    "ring_acc": 1.0,
+    "expected": "shared round-robin (closed loop)",
+    "correct": true
+   },
+   "I_shuffle": {
+    "cls": "random / shuffle",
+    "R": 0.016,
+    "z_R": 10.1,
+    "z_R20": 15.0,
+    "ring_z": 1.3,
+    "conc_z": -10.3,
+    "coll": 0.94,
+    "z_start": 1.3,
+    "K_little": 8.8,
+    "K_fano": 8.0,
+    "n_req": 1987,
+    "ring_acc": 0.0,
+    "expected": "random / shuffle",
+    "correct": true
+   },
+   "I_rrworker": {
+    "cls": "per-worker round-robin",
+    "R": 0.016,
+    "z_R": 10.1,
+    "z_R20": 15.0,
+    "ring_z": 1.7,
+    "conc_z": 74.6,
+    "coll": 0.94,
+    "z_start": 0.8,
+    "K_little": 8.9,
+    "K_fano": 8.0,
+    "n_req": 2003,
+    "ring_acc": 0.03,
+    "expected": "per-worker round-robin",
+    "correct": true
+   },
+   "I_rot429_shared": {
+    "cls": "per-worker round-robin",
+    "R": 0.004,
+    "z_R": 10.2,
+    "z_R20": 15.2,
+    "ring_z": -1.7,
+    "conc_z": 16.6,
+    "coll": 17.59,
+    "z_start": 7.6,
+    "K_little": 8.4,
+    "K_fano": 8.0,
+    "n_req": 1954,
+    "ring_acc": 0.05,
+    "expected": "ANY",
+    "correct": true
+   },
+   "I_rot429_worker": {
+    "cls": "sticky / episodic",
+    "R": 0.064,
+    "z_R": 9.6,
+    "z_R20": 1.1,
+    "ring_z": 1.3,
+    "conc_z": 0.4,
+    "coll": 0.36,
+    "z_start": -0.4,
+    "K_little": 8.5,
+    "K_fano": 8.0,
+    "n_req": 2024,
+    "ring_acc": 0.22,
+    "expected": "ANY",
+    "correct": true
+   },
+   "I_hashed": {
+    "cls": "random / shuffle",
+    "R": 0.019,
+    "z_R": 10.0,
+    "z_R20": 14.9,
+    "ring_z": 2.4,
+    "conc_z": -8.5,
+    "coll": 0.67,
+    "z_start": 0.6,
+    "K_little": 8.9,
+    "K_fano": 8.0,
+    "n_req": 2147,
+    "ring_acc": 0.03,
+    "expected": "random / shuffle",
+    "correct": true
+   },
+   "I_sticky_ttl": {
+    "cls": "random / shuffle",
+    "R": 0.016,
+    "z_R": 10.1,
+    "z_R20": 13.2,
+    "ring_z": 2.9,
+    "conc_z": -1.8,
+    "coll": 0.97,
+    "z_start": 1.9,
+    "K_little": 8.7,
+    "K_fano": 8.0,
+    "n_req": 1968,
+    "ring_acc": 0.05,
+    "expected": "sticky / episodic",
+    "correct": false
+   },
+   "I_hedged": {
+    "cls": "random / shuffle",
+    "R": 0.039,
+    "z_R": 9.8,
+    "z_R20": 14.7,
+    "ring_z": 1.9,
+    "conc_z": -10.9,
+    "coll": 0.91,
+    "z_start": 1.8,
+    "K_little": 6.3,
+    "K_fano": 6.0,
+    "n_req": 3514,
+    "ring_acc": 0.05,
+    "expected": "ANY",
+    "correct": true
+   },
+   "I_pinned": {
+    "cls": "none",
+    "R": 0.991,
+    "z_R": 0.6,
+    "z_R20": 0.5,
+    "ring_z": -0.8,
+    "conc_z": -1.2,
+    "coll": 0.0,
+    "z_start": 0.6,
+    "K_little": 8.5,
+    "K_fano": 8.0,
+    "n_req": 1966,
+    "ring_acc": 0.25,
+    "expected": "none",
+    "correct": true
+   },
+   "I_open_steady": {
+    "cls": "none",
+    "R": 0.925,
+    "z_R": 1.3,
+    "z_R20": -0.6,
+    "ring_z": 1.9,
+    "conc_z": -2.3,
+    "coll": 1.02,
+    "z_start": 0.4,
+    "K_little": 29.2,
+    "K_fano": 357.9,
+    "n_req": 7270,
+    "ring_acc": 0.03,
+    "expected": "none",
+    "correct": true
+   },
+   "I_company": {
+    "cls": "random / shuffle",
+    "R": 0.018,
+    "z_R": 10.0,
+    "z_R20": 15.0,
+    "ring_z": -2.0,
+    "conc_z": -3.7,
+    "coll": 0.92,
+    "z_start": 1.1,
+    "K_little": 4.5,
+    "K_fano": 4.0,
+    "n_req": 1001,
+    "ring_acc": 0.8,
+    "expected": "random / shuffle",
+    "correct": true
+   }
+  },
+  "correct": "10/11",
+  "pass_": true
+ },
+ "site_N_real": 3014,
+ "runtime_min": 1.1
+}

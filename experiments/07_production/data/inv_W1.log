@@ -1,0 +1,13 @@
+most enriched: []
+heavy-only spectral groups: {np.int64(0): 12, np.int64(1): 8} trimmed 0
+ group 0: n=12 counts p10/50/90=[1194.2 1198.5 1204.7] chi2=0.6 df=11 lower-p=4.11e-06 chutes {11: 0.17, 31: 0.17, 5: 0.08} fire-overlap 0
+   classifier: per-worker round-robin ring_z -1.9 conc 7.2 R 3.632
+ group 1: n=8 counts p10/50/90=[1138.3 1197.5 1203.6] chi2=8.4 df=7 lower-p=0.705 chutes {12: 0.25, 22: 0.25, 5: 0.13} fire-overlap 0
+   classifier: bunching ring_z -1.2 conc 3.1 R 2.852
+ chute 0: 352 heavy accts, counts median 43, var/mean 28.62
+ group 0: pools with 0-0 members: 64, ring z>6: 0
+ group 0: pools with 0-3 members: 195, ring z>6: 0
+ group 0: pools with 4-99 members: 5, ring z>6: 0
+ group 1: pools with 0-0 members: 90, ring z>6: 0
+ group 1: pools with 0-3 members: 199, ring z>6: 0
+ group 1: pools with 4-99 members: 1, ring z>6: 0

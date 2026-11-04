@@ -1,0 +1,202 @@
+{
+ "window": "data/W2.parquet",
+ "W": 3600.0,
+ "floor": 10,
+ "seed": 10,
+ "real": {
+  "active": 3069,
+  "light": 2187,
+  "heavy": 867,
+  "platform": 15,
+  "requests": 643220,
+  "dur_median": 7.38,
+  "dur_p90": 35.6
+ },
+ "inject": {
+  "I_rrshared": {
+   "ok": 2147,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_shuffle": {
+   "ok": 2035,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rrworker": {
+   "ok": 1975,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rot429_shared": {
+   "ok": 1885,
+   "refused": 123,
+   "keys_used": 40
+  },
+  "I_rot429_worker": {
+   "ok": 2024,
+   "refused": 1,
+   "keys_used": 8
+  },
+  "I_hashed": {
+   "ok": 2047,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_sticky_ttl": {
+   "ok": 2042,
+   "refused": 4,
+   "keys_used": 40
+  },
+  "I_hedged": {
+   "ok": 3656,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_pinned": {
+   "ok": 2035,
+   "refused": 0,
+   "keys_used": 8
+  },
+  "I_open_steady": {
+   "ok": 7880,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_company": {
+   "ok": 1043,
+   "refused": 0,
+   "keys_used": 10
+  }
+ },
+ "site_N_real": 3069,
+ "R5": {
+  "N_real": 3069,
+  "trimmed": 0,
+  "recall": 0.0,
+  "purity": 0.0,
+  "groups": [],
+  "pass_": false
+ },
+ "R9": {
+  "groups": [],
+  "pass_": null
+ },
+ "R8": {
+  "spectral_real_groups": [],
+  "graph_real_groups": [
+   {
+    "real_light": 1,
+    "real_platform": 1
+   },
+   {
+    "real_heavy": 2
+   },
+   {
+    "real_heavy": 2
+   },
+   {
+    "real_heavy": 2
+   },
+   {
+    "real_heavy": 5,
+    "real_light": 3
+   },
+   {
+    "real_platform": 1,
+    "real_light": 1
+   },
+   {
+    "real_heavy": 2,
+    "real_light": 1
+   },
+   {
+    "real_heavy": 2
+   },
+   {
+    "real_light": 2,
+    "real_heavy": 1
+   }
+  ],
+  "graph_groups": [
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "real_light": 1,
+    "real_platform": 1
+   },
+   {
+    "real_heavy": 2
+   },
+   {
+    "real_heavy": 2
+   },
+   {
+    "real_heavy": 2
+   },
+   {
+    "real_heavy": 5,
+    "real_light": 3
+   },
+   {
+    "real_platform": 1,
+    "real_light": 1
+   },
+   {
+    "real_heavy": 2,
+    "real_light": 1
+   },
+   {
+    "real_heavy": 2
+   },
+   {
+    "real_light": 23,
+    "real_heavy": 12,
+    "I_company": 9,
+    "I_shuffle": 1,
+    "I_sticky_ttl": 1
+   },
+   {
+    "real_light": 2,
+    "real_heavy": 1
+   },
+   {
+    "real_light": 77,
+    "real_heavy": 72,
+    "I_rrworker": 40,
+    "I_rrshared": 7,
+    "I_sticky_ttl": 6,
+    "I_hedged": 4,
+    "I_open_steady": 3,
+    "I_shuffle": 3,
+    "real_platform": 3,
+    "I_hashed": 1,
+    "I_rot429_worker": 1
+   }
+  ],
+  "graph_injected_recovery": {
+   "I_rrshared": 0.18,
+   "I_shuffle": 0.08,
+   "I_rrworker": 1.0,
+   "I_rot429_shared": 0.0,
+   "I_rot429_worker": 0.12,
+   "I_hashed": 0.02,
+   "I_sticky_ttl": 0.15,
+   "I_hedged": 0.1,
+   "I_pinned": 0.0,
+   "I_open_steady": 0.08,
+   "I_company": 0.9
+  }
+ },
+ "runtime_min": 3.2
+}

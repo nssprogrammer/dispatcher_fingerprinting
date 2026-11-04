@@ -1,0 +1,157 @@
+{
+ "window": "data/W1.parquet",
+ "W": 3600.0,
+ "floor": 10,
+ "seed": 10,
+ "real": {
+  "active": 1611,
+  "light": 1175,
+  "heavy": 429,
+  "platform": 7,
+  "requests": 669020,
+  "dur_median": 7.94,
+  "dur_p90": 29.38
+ },
+ "inject": {
+  "I_rrshared": {
+   "ok": 2212,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_shuffle": {
+   "ok": 2181,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rrworker": {
+   "ok": 2219,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_rot429_shared": {
+   "ok": 2416,
+   "refused": 161,
+   "keys_used": 40
+  },
+  "I_rot429_worker": {
+   "ok": 2410,
+   "refused": 9,
+   "keys_used": 9
+  },
+  "I_hashed": {
+   "ok": 2296,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_sticky_ttl": {
+   "ok": 2340,
+   "refused": 4,
+   "keys_used": 40
+  },
+  "I_hedged": {
+   "ok": 3884,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_pinned": {
+   "ok": 2327,
+   "refused": 0,
+   "keys_used": 8
+  },
+  "I_open_steady": {
+   "ok": 7864,
+   "refused": 0,
+   "keys_used": 40
+  },
+  "I_company": {
+   "ok": 1241,
+   "refused": 0,
+   "keys_used": 10
+  }
+ },
+ "site_N_real": 1611,
+ "R5": {
+  "N_real": 1611,
+  "trimmed": 0,
+  "recall": 0.0,
+  "purity": 0.0,
+  "groups": [],
+  "pass_": false
+ },
+ "R9": {
+  "groups": [],
+  "pass_": null
+ },
+ "R8": {
+  "spectral_real_groups": [],
+  "graph_real_groups": [
+   {
+    "real_light": 2,
+    "real_platform": 1
+   },
+   {
+    "real_heavy": 37
+   }
+  ],
+  "graph_groups": [
+   {
+    "I_company": 10
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 3
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "I_rrshared": 2
+   },
+   {
+    "real_light": 2,
+    "real_platform": 1
+   },
+   {
+    "real_heavy": 37
+   },
+   {
+    "real_light": 56,
+    "I_rrworker": 40,
+    "real_heavy": 30,
+    "I_rrshared": 10,
+    "I_hedged": 3,
+    "I_rot429_shared": 3,
+    "I_sticky_ttl": 3,
+    "I_hashed": 2,
+    "I_open_steady": 2,
+    "I_rot429_worker": 1,
+    "I_shuffle": 1
+   }
+  ],
+  "graph_injected_recovery": {
+   "I_rrshared": 0.25,
+   "I_shuffle": 0.02,
+   "I_rrworker": 1.0,
+   "I_rot429_shared": 0.08,
+   "I_rot429_worker": 0.12,
+   "I_hashed": 0.05,
+   "I_sticky_ttl": 0.08,
+   "I_hedged": 0.08,
+   "I_pinned": 0.0,
+   "I_open_steady": 0.05,
+   "I_company": 1.0
+  }
+ },
+ "runtime_min": 1.5
+}
